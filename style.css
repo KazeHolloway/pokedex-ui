@@ -1,0 +1,214 @@
+/* === GLOBAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === HERO SECTION === */
+.hero {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;  /* padding : espace interne haut/bas 80px, gauche/droite 20px */
+}
+
+.hero-logo {
+    width: 200px;
+    margin-bottom: 20px;  /* margin : espace extérieur sous le logo */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #a0a0c0;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #e94560;
+    color: white;
+    padding: 12px 30px;   /* padding : espace interne bouton */
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #c73652;
+}
+
+/* === FEATURES === */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;             /* gap : espace entre les cartes */
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;         /* padding : espace intérieur de chaque carte */
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-top: 4px solid #e94560;  /* border : bordure visible en haut */
+}
+
+.feature-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+/* === CARTE HEADER === */
+.carte-header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-btn {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.carte-header h1 {
+    font-size: 1.5rem;
+}
+
+/* === CARTE PRODUIT === */
+.carte-main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;    /* padding : espace autour de la carte */
+}
+
+.pokemon-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    width: 350px;
+    overflow: hidden;
+    border: 2px solid #e2e8f0;  /* border : contour de la carte */
+}
+
+.card-image {
+    background: linear-gradient(135deg, #fef08a, #fde047);
+    padding: 30px;          /* padding : espace autour de l'image Pokémon */
+    text-align: center;
+    position: relative;
+}
+
+.card-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card-number {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;          /* padding : espace intérieur du corps de carte */
+}
+
+.card-name {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.card-types {
+    margin-bottom: 15px;
+}
+
+.type {
+    display: inline-block;
+    padding: 4px 12px;      /* padding : espace interne du badge type */
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+}
+
+.electrik {
+    background-color: #f5c518;
+    color: #333;
+}
+
+.card-description {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    border-left: 3px solid #e94560;  /* border : ligne décorative gauche */
+    padding-left: 10px;               /* padding : espace entre ligne et texte */
+}
+
+/* Séparer les caractéristiques physiques des statistiques */
+.stats-divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+}
+
+.stats-title {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #1a1a2e;
+}
+
+
+.card-stats {
+    list-style: none;
+    padding: 0;
+}
+
+.card-stats li {
+    padding: 6px 0;         /* padding : espace vertical entre chaque stat */
+    border-bottom: 1px solid #f0f0f0;  /* border : séparateur entre stats */
+    font-size: 0.95rem;
+}
+
+.card-stats li:last-child {
+    border-bottom: none;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #1a1a2e;
+    color: #606080;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
